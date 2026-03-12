@@ -3,8 +3,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { ref, uploadBytes, getDownloadURL, listAll, getMetadata, deleteObject } from "firebase/storage"; // 여기서 추가
 import { collection, addDoc, serverTimestamp, query, orderBy, getDocs, limit, deleteDoc, doc } from "firebase/firestore";
-import { storage } from "@/lib/firebase";
-import { db } from "@/lib/firebase";
+import { storage } from "../lib/firebase";
+import { db } from "../lib/firebase";
 import QuizCard from './components/QuizCard';
 import Flashcard from './components/Flashcard';
 import AudioOverview from './components/AudioOverview';
